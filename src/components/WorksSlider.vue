@@ -5,7 +5,7 @@
             <div v-for="(item, i) in sliderData" :key="i">
                 <Transition name="slide-fade">
                     <a href="https://sokolvek.github.io/vue-shop-portfolio/">
-                        <img :src="`../src/assets/imgs/${item.img}`" alt="">
+                        <img src="https://cdn.discordapp.com/attachments/836649964834521101/1208988067965304863/image.png?ex=65e548e1&is=65d2d3e1&hm=3505f95295367d3a62b1da5517d9097e39891bffcd52f02c8b3581f9ce6e639b&" alt="">
                     </a>
                 </Transition>
         </div>
