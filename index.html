@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>clifyy.dev</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com/">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../cdn.jsdelivr.net/npm/boxicons%40latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    :root {
+      --background-color: #000;
+      --text-color: #fff;
+      --bubble-color: rgba(255, 255, 255, 0.5);
+      --server-name-color: #fff;
+      --icon-color: #fff;
+    }
+
+    .light-theme {
+      --background-color: #fff;
+      --text-color: #000;
+      --bubble-color: rgba(0, 0, 0, 0.5);
+      --server-name-color: #000;
+      --icon-color: #000;
+    }
+
+    body {
+      background-color: var(--background-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+      transition: background-color 0.3s, color 0.3s;
+      overflow-x: hidden;
+      overflow-y: hidden;
+    }
+
+    .audio-player-container {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 300px;
+      background-color: var(--background-color);
+      border: 2px solid var(--text-color);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      color: var(--text-color);
+    }
+
+    .audio-player-container img {
+      width: 60px;
+      height: 60px;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+
+    .audio-details {
+      flex-grow: 1;
+    }
+
+    .audio-details h4 {
+      margin: 0;
+      font-size: 16px;
+      color: var(--text-color);
+    }
+
+    .audio-details p {
+      margin: 0;
+      font-size: 12px;
+      color: var(--text-color);
+    }
+
+    .custom-audio {
+      width: 100%;
+      margin-top: 5px;
+    }
+
+    .switcher-container {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .theme-switcher,
+    .music-switcher {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 32px;
+      color: var(--text-color);
+      transition: color 0.3s;
+    }
+
+    .hero__link i {
+      font-size: 28px;
+      color: var(--icon-color);
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    .hero__link i:hover {
+      transform: translateY(-5px) scale(1.05);
+      color: #4facfe;
+    }
+
+    .server__link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--server-name-color);
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    .server__link:hover {
+      transform: translateY(-5px) scale(1.05);
+      color: #4facfe;
+    }
+
+    .hover-animate {
+      display: inline-block;
+      transition: transform 0.5s ease, color 0.5s ease;
+    }
+
+    .hover-animate:hover {
+      transform: translateY(-5px) scale(1.05);
+      color: #4facfe;
+    }
+
+    .bubble {
+      position: absolute;
+      border-radius: 50%;
+      background-color: var(--bubble-color);
+      pointer-events: none;
+      animation: bubbleAnimation 3s ease-out forwards;
+    }
+
+    @keyframes bubbleAnimation {
+      to {
+        transform: translateY(-100px) scale(0);
+        opacity: 0;
+      }
+    }
+
+    .visitor-counter {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      font-size: 18px;
+      color: var(--text-color);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .visitor-counter i {
+      font-size: 24px;
+      color: var(--text-color);
+    }
+
+    @media (max-width: 768px) {
+      .audio-player-container {
+        max-width: 300px;
+        bottom: 10px;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <header class="header">
+    <span class="logo hover-animate">Felix dev</span>
+  </header>
+
+  <div class="hero">
+    <div class="container hero__container">
+      <div class="hero__about">
+        <h1 class="hero__title hover-animate">Hi, I am Felix</h1>
+        <h2 class="hero__subtitle hover-animate">Entuziast software developer writing Backend/Fronend</h2>
+        <p class="hero__description hover-animate">To contact us with any questions, write to Telegram</p>
+
+        <div class="hero__links">
+          <a class="hero__link" href="https://discordapp.com/users/253546554424557569" target="_blank">
+            <i class='bx bxl-discord'></i>
+          </a>
+          <a class="hero__link" href="https://t.me/DrainEjnoyer" target="_blank">
+            <i class='bx bxl-telegram'></i>
+          </a>
+          <a class="hero__link" href="https://github.com/sokolvek" target="_blank">
+            <i class='bx bxl-github'></i>
+          </a>
+        </div>
+
+
+
+      </div>
+
+      <div class="hero__box">
+        <img class="hero__box-img" src="11.jfif" alt="">
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+
